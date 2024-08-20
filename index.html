@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./expp.css"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+</head>
+<style>
+    /* Increase the width of the dropdown menu */
+    .dropdown-menu {
+        min-width: 250px;
+        /* Adjust the width as needed */
+    }
+</style>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="nav-logo" src="./images/logo/ICULE.png">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Solutions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                        style="top: 40px;max-width: 1402px;left: -523px !important;text-align: center;">
+                        <div class=" container doctor-patient-login-nav">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="dropdown-item-text-h2">
+                                        <a class="dropdown-item-text-h2" href="#">Our products</a>
+                                        <span class="ul-service">
+                <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Clinic Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Daycare Management Software</a>
+                    </li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#">Revenue Cycle Management (TPA)
+                            Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#">HR and Attendance Management
+                            Software</a></li>
+                </span>
+                </h2>
+        </div>
+        <div class="col">
+            <h2 class="dropdown-item-text-h2">
+                <a class="dropdown-item-text-h2" href="#">Value-Add Services</a>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Outpatient</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#">Telemedicine</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> EMR</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> RIS & PACS</a>
+                    </li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Pharmacy</a></li>
+                </span>
+            </h2>
+        </div>
+        <div class="col">
+            <h2 class="dropdown-item-text-h2">
+                <a class="dropdown-item-text-h2" href="#">Cybersecurity - Healthcare</a>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Clinical Assessment Forms</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> General Practice </a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#">OB-GYN Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Paediatric Management Software</a>
+                    </li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Orthopaedic Management Software</a>
+                    </li>
+                </span>
+            </h2>
+        </div>
+        <div class="col">
+            <h2 class="dropdown-item-text-h2">
+                <a class="dropdown-item-text-h2" href="#">Healthcare Calculators</a>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+            </h2>
+        </div>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                style="top: 40px;max-width: 1402px;left: -623px !important;text-align: center;">
+                <div class=" container doctor-patient-login-nav">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="dropdown-item-text-h2">
+                                <a class="dropdown-item-text-h2" href="#">Our Services</a>
+                                <span class="ul-service">
+        <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+        </span>
+        <span class="ul-service">
+            <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+        </span>
+        <span class="ul-service">
+            <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+        </span>
+        <span class="ul-service">
+            <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+        </span>
+        <span class="ul-service">
+            <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+        </span>
+        </h2>
+
+        </div>
+        <div class="col">
+            <h2 class="dropdown-item-text-h2">
+                <a class="dropdown-item-text-h2" href="#">Value-Add Services</a>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+            </h2>
+        </div>
+        <div class="col">
+            <h2 class="dropdown-item-text-h2">
+                <a class="dropdown-item-text-h2" href="#">Cybersecurity - Healthcare</a>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+            </h2>
+        </div>
+        <div class="col">
+            <h2 class="dropdown-item-text-h2">
+                <a class="dropdown-item-text-h2" href="#">Healthcare Calculators</a>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+                <span class="ul-service">
+                    <li class="Our Services-li"><a class="Our Services-li" href="#"> Management Software</a></li>
+                </span>
+            </h2>
+        </div>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+        </li>
+        </ul>
+        </div>
+
+        <div class="col">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-7e39bbf elementor-align-center elementor-widget__width-auto elementor-widget elementor-widget-button"
+                    data-id="7e39bbf" data-element_type="widget"
+                    data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="button.default">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login<i
+                                    class="icon icon-down-arrow1"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="top: 40px;     max-width: 1402px;
+                                left: -976px !important;">
+                                <div class=" container doctor-patient-login">
+                                    <div class="row d-flex doctor-patient-login">
+                                        <div class="col-md-5 doctor-patient-login ">
+                                            <img src="https://ezovion.com/wp-content/uploads/2022/04/MicrosoftTeams-image-257-150x150-1.webp"
+                                                class="img-fluid" alt="Doctor login">
+                                            <h2 class="dp-h2">Doctor login</h2>
+                                            <p class="doctor-patient-login">Welcome to Ezovion HMS. Login with your
+                                                details to start transforming
+                                                your
+                                                hospital with an intelligent HMS.</p>
+                                            <a href="#" target="_blank" class="btn btn-primary btn-sm">Login Here</a>
+                                        </div>
+                                        <div class="col-md-5 doctor-patient-login ">
+                                            <img src="https://ezovion.com/wp-content/uploads/2022/04/MicrosoftTeams-image-256-150x150-1.webp"
+                                                class="img-fluid" alt="Patient login">
+                                            <h2 class="dp-h2">Patient login</h2>
+                                            <p class="doctor-patient-login">Login into your account to book appointments
+                                                with doctors, access health
+                                                records, and understand your healthcare journey better.</p>
+                                            <a href="#" target="_blank" class="btn btn-primary btn-sm">Login Here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-7e39bbf elementor-align-center elementor-widget__width-auto elementor-widget elementor-widget-button"
+                    data-id="7e39bbf" data-element_type="widget"
+                    data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="button.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-button-wrapper">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Book Demo</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ____________
+        ______nav end -->
+    <!-- brand section -->
+    <section class="brand-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12 order-lg-1 order-md-1 order-sm-2">
+                    <div class="intro_block">
+                        <div class="monitor">
+                            <h1 class="main-title"><span class="one-brand-section">
+                                    One </span> stop <br>Digital<span
+                                    class="color-change">&nbsp;Healthcare</span><br>Solutions
+                            </h1>
+                            <!-- SVG image -->
+                            <div class="heart-rate">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px"
+                                    height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73"
+                                    xml:space="preserve">
+                                    <polyline fill="none" stroke="#b354a6" stroke-width="3" stroke-miterlimit="10"
+                                        points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486" />
+                                </svg>
+                                <div class="fade-in"></div>
+                                <div class="fade-out"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <p class="brand-para">
+                        Empowering Healthcare Stakeholders with Cutting Edge and Innovative Software Products</p>
+                    </p>
+                    <div class="brand-shop-button">
+                        <a class="schedule-a demo" href="#><button class=" btn secondary_button hero_schedule_button"
+                            type="submit">Schedule A
+                            Demo</button></a>
+                        <a class="Our Services-li" href="#"> <button id="contact_info"
+                                class="btn primary_button hero_contact_button" type="submit">Contact
+                                Us</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 order-lg-2 order-md-2 order-sm-1">
+                    <div class="first-doc-pic">
+                        <img src="./images/header-about/hospital-building.webp" class="index-doc-pic"
+                            alt="digitalhealthcare healthcare solutions healthcare software healthcare software companies healthcare solutions companies CRM" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- brand section End -->
+    <!-- section third  -->
+    <!--carousel section  -->
+    <section id="brand" class="client-slider productfour">
+        <div class="container">
+            <div class="">
+                <h2 class="section_two_title">
+                    Trusted By <span style="color: #b354a6;">1000+</span> Businesses Globally
+                </h2>
+            </div>
+            <div class="trust_content_box d-md-block d-none" style="display: flex;justify-content: center;">
+                <div class=" row justify-content-center">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="trust_content">
+                            <span class="trust_content_title">15M+</span>
+                            <span class="trust_content_title2">Patient Records</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="trust_content">
+                            <span class="trust_content_title">20k+</span>
+                            <span class="trust_content_title2">Doctors</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="trust_content">
+                            <span class="trust_content_title">40+</span>
+                            <span class="trust_content_title2">Cities</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="trust_content">
+                            <span class="trust_content_title">10+</span>
+                            <span class="trust_content_title2">Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="client-logo-slider">
+        <div class="owl-carousel owl-theme">
+
+            <div class="item" ">
+                <div class=" slide-box" ">
+                    <img src=" ./images/client-logo/client-img-ag.webp" class="client-img" alt="client-logo">
+                <button class="bln">Multi-Location, Fiji</button>
+            </div>
+            <div class="slide-box" ">
+                    <img src=" ./images/client-logo/client-img-clinica.webp" alt="client-logo" class="client-img">
+                <button class="bln">Multi-Location, Fiji</button>
+            </div>
+        </div>
+        <div class="item" ">
+                <div class=" slide-box" ">
+                    <img src=" ./images/client-logo/client-img-apllo.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class="slide-box" ">
+                    <img src=" ./images/client-logo/client-img-zens.webp" alt="client-logo" class="client-img">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <div class="item" ">
+                <div class=" slide-box" ">
+                    <img src=" ./images/client-logo/client-img-medica.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class="slide-box" ">
+                    <img src=" ./images/client-logo/client-img-clinica.webp" alt="client-logo" class="client-img">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <div class="item" ">
+            <div class=" slide-box" ">
+                <img src=" ./images/client-logo/client-img-zens.webp" alt="client-logo" class="client-img">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class=" slide-box" ">
+            <img src=" ./images/client-logo/client-img-ag.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <div class="item" ">
+            <div class=" slide-box" ">
+                <img src=" ./images/client-logo/client-img-apllo.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class="slide-box" ">
+                    <img src=" ./images/client-logo/client-img-clinica.webp" alt="client-logo" class="client-img">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <div class="item" ">
+            <div class=" slide-box" ">
+                <img src=" ./images/client-logo/client-img-apllo.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class=" slide-box" ">
+            <img src=" ./images/client-logo/client-img-ag.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <div class="item" ">
+                <div class=" slide-box" ">
+                    <img src=" ./images/client-logo/client-img-clinica.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class="slide-box" ">
+            <img src=" ./images/client-logo/client-img-zens.webp" alt="client-logo" class="client-img">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <div class="item" ">
+                <div class=" slide-box" ">
+                    <img src=" ./images/client-logo/client-img-clinica.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class=" slide-box" ">
+            <img src=" ./images/client-logo/client-img-apllo.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <div class="item" ">
+                <div class=" slide-box" ">
+                    <img src=" ./images/client-logo/client-img-clinica.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class="slide-box" ">
+                    <img src=" ./images/client-logo/client-img-clinica.webp" alt="client-logo" class="client-img">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <div class="item" ">
+            <div class=" slide-box" ">
+                <img src=" ./images/client-logo/client-img-zens.webp" alt="client-logo" class="client-img">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        <div class=" slide-box" ">
+            <img src=" ./images/client-logo/client-img-apllo.webp" class="client-img" alt="client-logo">
+            <button class="bln">Multi-Location, Fiji</button>
+        </div>
+        </div>
+        <!-- Other carousel items... -->
+
+        </div>
+    </section>
+    <!-- carousel section end -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true, // Enable autoplay
+                autoplayTimeout: 3000, // Set autoplay interval in milliseconds (3 seconds in this example)
+                dots: false, // Hide navigation dots
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    <!-- section third end   -->
+    <!-- <div class="pulse-container">
+        <div class="pulse">
+            <div class="plus">+</div>
+        </div>
+    </div> -->
+
+    <!-- Our services in about  -->
+    <section class="cards-design-4">
+        <div class="container">
+            <div class="">
+                <h2 class="one">
+                    Empower with Holistic <span style="color: #b354a6;">Digital Healthcare</span> Products
+                </h2>
+            </div>
+
+            <div class="row position">
+                <!-- <div class="row"> -->
+                <!-- <div class="col-md-6 col-sm-12">
+                    <div class="doctor">
+                        <img src="./images/DOCTORS PIC /doctor-animation.png" alt="Doctor">
+                    </div>
+
+                </div> -->
+                <!-- </div> -->
+                <div class="col-md-3 col-sm-12">
+                    <div class="fancy-cards">
+                        <div class="fancy-card">
+                            <div class="top" style="background-image: url(./images/sloutions-img/hospital-2.webp);">
+                                <div class="caption">
+                                    <h3 class="title">Fully integrated FHIR compliant digital platform for a complete
+                                        healthcare experience</h3>
+                                    <!-- <a href="" class="button">Find Out </a> -->
+                                </div>
+                            </div>
+                            <div class="middle"></div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="fancy-cards">
+                        <div class="fancy-card">
+                            <div class="top" style="background-image: url(./images/sloutions-img/doctor-3.webp);">
+                                <div class="caption">
+                                    <h3 class="title">Easy to use Electronic health record for better clinical decision
+                                        making</h3>
+                                    <!-- <a href="" class="button">Find Out </a> -->
+                                </div>
+                            </div>
+                            <div class="middle"></div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="row position"> -->
+
+                <div class="col-md-3 col-sm-12">
+                    <div class="fancy-cards">
+                        <div class="fancy-card">
+                            <div class="top" style="background-image: url(./images/sloutions-img/doctor-4.webp);">
+                                <div class="caption">
+                                    <h3 class="title">Mobile app integrations with medical devices for remote
+                                        patient
+                                        monitoring</h3>
+                                    <!-- <a href="" class="button">Find Out </a> -->
+                                </div>
+                            </div>
+                            <div class="middle"></div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="fancy-cards">
+                        <div class="fancy-card">
+                            <div class="top" style="background-image: url(./images/sloutions-img/hospital-icon.webp);">
+                                <div class="caption">
+                                    <h3 class="title">AI/ML powered Speech to text for seamless clinical
+                                        documentation
+                                    </h3>
+                                    <!-- <a href="" class="button">Find Out </a> -->
+                                </div>
+                            </div>
+                            <div class="middle"></div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- end -->
+    <!-- video section  -->
+    <setion class="videogalery">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="video-wrapper">
+                        <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/uBEgSxv_62k?si=oUv142qa5vNCsKDD"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <div class="text-center">
+                        <h2>Watch Our Animated Video</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo sodales, dapibus
+                            justo a, posuere magna.</p>
+                        <a href="#" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </setion>
+
+
+
+    <!-- end  -->
+    <section class="form-design">
+        <div class="container">
+            <div class="">
+                <h2 class="one">
+                    Register For a <span style="color: #b354a6;">Register For a Free Trial</span> Trial
+                </h2>
+                <p class="key-p">We have multiple hospital management software modules that you can personalize
+                    according to your
+                    needs depending on your hospital requirements.</p>
+            </div>
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    <h2>Register For a Free Trial</h2>
+                     <p class="key-p">We have multiple hospital management software modules that you can personalize according to your
+                        needs depending on your hospital requirements.</p>
+                </div>
+            </div> -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-container">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                            <input type="text" class="form-control" placeholder="Hospital/Clinic Name" required>
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <div class="phone-number-group">
+                                <select class="form-control" required>
+                                    <option value="+91">🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <!-- Add more country codes as needed -->
+                                </select>
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- key features section  -->
+    <section class="keyframe-design">
+        <div class="container">
+            <div class="key-h4">
+                <h2 class="key-h2">Key Features</h2>
+                <p class="key-p">Here are the key features of our hospital management software.</p>
+                <!-- <div class="container feature-section text-center"> -->
+            </div>
+            <div class="row mt-5">
+                <!-- Left Column Features -->
+                <div class="col-md-3 text-left">
+                    <div class="feature-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <p class="key-p">Dashboard</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-plus"></i>
+                        <p class="key-p">Patient Registration</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <p class="key-p">Appointment Management</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-tasks"></i>
+                        <p class="key-p">Queue Management</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <p class="key-p">OP and IP Billing</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-notes-medical"></i>
+                        <p class="key-p">Electronic Health Records</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-bed"></i>
+                        <p class="key-p">Ward Management</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-nurse"></i>
+                        <p class="key-p">Nurse Management</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-notes-medical"></i>    
+                        <p class="key-p">Electronic Health Records</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-bed"></i>
+                        <p class="key-p">Ward Management</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-nurse"></i>
+                        <p class="key-p">Nurse Management</p>
+                    </div>
+                </div>
+
+
+                <!-- Center Column Features and Image -->
+                <div class="col-md-6 text-center feature-center">
+                    <!-- <img src="path/to/center-image.png" alt="Key Features"> -->
+                    <div class="laptop">
+                        <div class="screen">
+                            <div class="slider">
+                                <div class="slides">
+                                    <img src="./images/keyfframe/key-1.png" alt="Slide 1">
+                                    <img src="./images/keyfframe/key-2.png" alt="Slide 2">
+                                    <img src="./images/keyfframe/key-3.png" alt="Slide 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <div class="feature-item">
+                                <i class="fas fa-vials"></i>
+                                <p class="key-p">Laboratory Management</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <p class="key-p">Patient Vital Tracking</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <p class="key-p">Insurance Processing</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-file-invoice"></i>
+                                <p class="key-p">Billing and Invoicing System</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-procedures"></i>
+                                <p class="key-p">Operation Theater Management</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <div class="feature-item">
+                                <i class="fas fa-hospital-alt"></i>
+                                <p class="key-p">Blood Bank</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <p class="key-p">Medical Camp Management</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-pills"></i>
+                                <p class="key-p">Pharmacy Management</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-syringe"></i>
+                                <p class="key-p">Pharmacy and Stock Management</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-language"></i>
+                                <p class="key-p">Multilingual User Interface & Data</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column Features -->
+                <div class="col-md-3 text-left">
+                    <div class="feature-item">
+                        <i class="fas fa-comment-dots"></i>
+                        <p class="key-p">Speech to Text</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-network-wired"></i>
+                        <p class="key-p">Multi-location support</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p class="key-p">Mobile Apps</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-circle"></i>
+                        <p class="key-p">Patient Portal</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-desktop"></i>
+                        <p class="key-p">Kiosk</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line"></i>
+                        <p class="key-p">Analytics and Reports</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-file-alt"></i>
+                        <p class="key-p">Custom Reports and Templates</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-cogs"></i>
+                        <p class="key-p">Role Based Access</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line"></i>
+                        <p class="key-p">Analytics and Reports</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-file-alt"></i>
+                        <p class="key-p">Custom Reports and Templates</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-cogs"></i>
+                        <p class="key-p">Role Based Access</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>const slides = document.querySelector('.slides');
+            const slideImages = document.querySelectorAll('.slides img');
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                const totalSlides = slideImages.length;
+                if (index >= totalSlides) {
+                    currentIndex = 0;
+                } else if (index < 0) {
+                    currentIndex = totalSlides - 1;
+                } else {
+                    currentIndex = index;
+                }
+                slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            function nextSlide() {
+                showSlide(currentIndex + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentIndex - 1);
+            }
+
+            // Auto-slide functionality (optional)
+            setInterval(nextSlide, 3000); // Change slides every 3 seconds
+
+            // Example navigation functions (optional)
+            document.querySelector('.next').addEventListener('click', nextSlide);
+            document.querySelector('.prev').addEventListener('click', prevSlide);
+        </script>
+
+
+
+
+        <!-- counter section  -->
+        <div class="container">
+            <div class="map-position">
+                <div id="map" class="my-4" data-aos="fade-up"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19867.208601651986!2d-0.17101002911118332!3d51.50585742500925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1482355389969"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four col-md-3">
+                    <div class="counter-box colored"> <i class="fa fa-group"></i> <span class="counter">500</span>
+                        <p>Patients Records</p>
+                    </div>
+                </div>
+                <div class="four col-md-3">
+                    <div class="counter-box colored"> <i class='fas fa-thumbs-up'></i><span class="counter">450K</span>
+                        <p>Solutions</p>
+                    </div>
+                </div>
+                <div class="four col-md-3">
+                    <div class="counter-box colored"> <i class="fa fa-shopping-cart"></i> <span
+                            class="counter">3000</span>
+                        <p>Beds being Served</p>
+                    </div>
+                </div>
+                <div class="four col-md-3">
+                    <div class="counter-box colored"> <i class="fa fa-user"></i> <span class="counter">1121</span>
+                        <p>Cities and States</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>$(document).ready(function () {
+
+                $('.counter').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 4000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+
+            });</script>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-info">
+                                <h3>Medicio</h3>
+                                <p>
+                                    A108 Adam Street <br>
+                                    NY 535022, USA<br><br>
+                                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                                    <strong>Email:</strong> info@example.com<br>
+                                </p>
+                                <div class="social-links mt-3">
+                                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#">
+                                        Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#">
+                                        About us</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#">
+                                        Services</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#">
+                                        Terms of
+                                        service</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#">
+                                        Privacy
+                                        policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#"> Web
+                                        Design</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#"> Web
+                                        Development</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#">
+                                        Product
+                                        Management</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#">
+                                        Marketing</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a class="Our Services-li" href="#">
+                                        Graphic
+                                        Design</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 footer-newsletter">
+                            <h4>Our Newsletter</h4>
+                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit" value="Subscribe">
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-1">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Medicio</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="AITECHNOMIND">AITECHNOMIND</a>
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+
+
+
+</body>
+
+</html>

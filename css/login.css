@@ -1,0 +1,55 @@
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://www.yourimageurl.com/hospital-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.avatar {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-primary {
+    background-color: #b354a6;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #9d4790;
+}
+
+.form-control:focus {
+    border-color: #b354a6;
+    box-shadow: 0 0 0 0.2rem rgba(179, 84, 166, 0.25);
+} */
+
+
+/* doctor moving animation  */
+/* .doctor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite alternate;
+} */
